@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/todo-local-storage/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/todo-local-storage/node_modules/normalize.css">
+
+</head>
+
+<body>
+    <div id="contenido">
+        <h1>Tus notas</h1>
+
+        <form>
+            <input type="text" id="user-todo" required>
+        </form>
+
+        <h2 id="todos">Elementos en tus notas</h2>
+
+        <ul></ul>
+
+        <button id="clear"> Borrar </button>
+    </div>
+
+</body>
+<script>
+    let form = document.querySelector('form');
+    let todoList = document.querySelector('ul');
+    let buton = document.querySelector('button');
+    let input = document.getElementById('user-todo');
+    //let array = [];
+    //let array = localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [];
+
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        // array.push(input.value);
+        // localStorage.setItem('todos', JSON.stringify(array))
+        todoMaker(input.value);
+        input.value = "";
+    });
+
+
+    let todoMaker = function (text) {
+        //variable para guardar en li
+
+
+        let texto = document.createElement('li');
+        texto.textContent = text;
+
+        let checkbox = document.createElement('input');
+        checkbox.type = "checkbox";
+        checkbox.name = "name";
+        checkbox.value = "value";
+        checkbox.id = "id";
+
+        //añadimos al final de la lista lo que recibe
+        todoList.appendChild(checkbox); 
+        todoList.appendChild(texto);
+    }
+
+    // for (var i = 0; i < storage.length; i++) {
+    //      todoMaker(storage[i]);
+    // }
+
+    //para borrar elementos
+    buton.addEventListener("click", function () {
+
+        let borrarLI = document.querySelector('li');
+
+
+        while (borrarLI.firstChild) {
+            todoList.removeChild(borrarLI);
+        }
+    });
+</script>
+
+</html>

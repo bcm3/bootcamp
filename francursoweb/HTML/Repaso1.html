@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+
+        /* http://meyerweb.com/eric/tools/css/reset/
+           v2.0 | 20110126
+           License: none (public domain)
+        */
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+        /*MIS ESTILOS*/
+        #bordesuperior{
+            background: #000;
+            position: fixed; /*Fija el nav arriba*/
+
+            /*Ancho y alto del borde*/
+            width: 100%;
+            height: 60px;
+            padding: 0 10% 0 10%; /*Arriba izquierda abajo derecha respecto al contenedor principal */
+            line-height: 50px; /* Centramos el texto dentro del nav */
+
+        }
+        #bordesuperior > nav > ul > li{
+            list-style: none; /*Quitamos el estilo de la lista */
+            float: left; /* A nuestra izquierda */
+            margin-left: 25px; /* Movemos los 'li' (texto) */
+        }
+
+        #bordesuperior > nav > ul > li > a{
+            text-decoration: none; /* Quita el estilo al texto */
+            color: white;
+        }
+
+        
+
+        main{
+            padding-top: 70px;
+            padding-left: 70px;
+            height: 150px;
+            padding: 80 10% 0 10%; /*Arriba izquierda abajo derecha respecto al contenedor principal */
+        }
+
+        main > header > .izquierda{
+            width: 300px;
+            height: 150px;
+            float: left;
+        }
+
+        main > header > .derecha{
+            padding-left: 1em;
+            width: 300px;
+            height: 150px;
+            float: left;
+
+        }
+
+        main > header > .derecha > h1{
+            font-family: cursive;
+            padding-top: 1em;
+            padding-bottom: 1em;
+
+        }
+
+         main > header > .derecha > a{
+            font-family: cursive;
+            text-decoration: none;
+            color: black;
+            padding-top: 1em;
+
+        }
+
+        main > header{
+            margin-left: 70px;
+        }
+
+    </style>
+</head>
+<body>
+   <div id="bordesuperior">
+    <nav>
+       <ul>
+            <li><a href=""><img src=https://source.unsplash.com/user/erondu/100x50 alt=""></a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <main>
+      <header>
+           <article class="izquierda"><img src=https://source.unsplash.com/user/erondu/300x150 alt=""></article>
+           <article class="derecha"><h1>BUSINES OR NOTHING</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel perferendis quae aliquid repellendus similique fuga quos odio, </p> <a href="">call tu action</a></article>
+       </header>
+    </main>
+</body>
+</html>

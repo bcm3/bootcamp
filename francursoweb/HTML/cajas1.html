@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio</title>
+    <style>
+        #contenedor{
+            margin: 0 auto;
+            width: 960px;
+        }
+        
+        nav{
+            background: grey;
+            height: 50px;
+            
+        }
+        
+        nav > ul{
+            list-style: none;
+            display: inline-block;
+            color: white;
+            background: grey;
+            
+        }
+        
+        ul > li{
+            width: 200px;
+            height: 12px;
+            display: inline;
+        }
+        
+        header{
+            background: #E6E6E6;
+            margin-left: 10px;
+            width: 940px;
+        }
+        header > h1{
+            margin-left: 50px;
+            margin-right: 70px;
+            margin-top: 10px;
+        }
+        header > p{
+            margin-left: 50px;
+        }
+        header > button{
+            margin-left: 50px;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        section{
+            margin: 0 auto;
+            background: white;
+            width: 1000px;
+        }
+        
+        section > article{
+            float: left;
+            outline: 2px solid black;
+            margin-left: 40px;
+         }
+        
+        article > img{
+            width: auto;
+            height: 100px;
+        }
+        
+        #contenedor button:nth-child(odd){
+            border-radius: 5px;
+            background: black;
+            color: white;
+        }
+        
+        #contenedor button:nth-child(even){
+            border-radius: 5px;
+            background: white;
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+   <div id="contenedor">
+        <nav>
+            <ul>
+                <li><bold>Strat Bootstrap</bold></li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <header>
+            <h1>A Warm Welcome!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio sapiente fugit illum tempore repellat aliquam sit porro adipisci. Ullam saepe pariatur officia soluta numquam, mollitia illo provident aspernatur magnam ab!</p>
+            <button type="button">Call to action!</button>
+        </header>
+        <hr/>
+        <section>
+            <h3>Latest Features</h3>
+                <article><img src="https://source.unsplash.com/random"><h4>Feature Label</h4><p>Lorem ipsum dolor sit amet</p><button type="button">Buy now!</button><button type="button">More info</button></article>
+
+                <article><img src="https://source.unsplash.com/random"><h4>Feature Label</h4><p>Lorem ipsum dolor sit amet</p><button type="button">Buy now!</button><button type="button">More info</button></article>
+
+                <article><img src="https://source.unsplash.com/random"><h4>Feature Label</h4><p>Lorem ipsum dolor sit amet</p><button type="button">Buy now!</button><button type="button">More info</button></article>
+
+                <article><img src="https://source.unsplash.com/random"><h4>Feature Label</h4><p>Lorem ipsum dolor sit amet</p><button type="button">Buy now!</button><button type="button">More info</button></article>
+        </section>
+    </div>
+</body>
+</html>

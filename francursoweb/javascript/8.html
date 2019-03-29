@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+</head>
+<body>
+    <input type="button" name="" value="" onclick="fibo()">
+    
+    <script type="text/javascript">
+    
+        function fibo(){
+            var anterior,ultimo,aux;
+            anterior=0;
+            ultimo=1;
+            var solucion;
+            solucion="0 - 1";
+            while(ultimo<=25000000){
+                aux=anterior+ultimo;
+                anterior=ultimo;
+                ultimo=aux;
+                
+                if (ultimo>0) solucion=solucion+"-"+ultimo;
+            }
+            alert(solucion);
+        }
+    
+    </script>
+</body>
+</html>

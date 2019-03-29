@@ -1,0 +1,60 @@
+<div id="uno">
+<nav>
+    <ul>
+      <li>UNO</li>
+      <li>DOS</li>
+      <li>TRES</li>
+    </ul>
+</nav>
+</div>
+<div id="dos">
+
+<nav>
+    <ul>
+      <li>UNO</li>
+      <li>DOS</li>
+      <li>TRES</li>
+    </ul>
+</nav>
+</div>
+
+//////CSSSS
+
+
+$color_fondo: #F00;
+//$ancho: 200px;
+$dato: 100px;
+$ancho: $dato*2;
+$alto: 100px;
+
+
+#uno{
+  width: $ancho;
+  height: $alto;
+  background-color: $color_fondo;
+}
+
+//neesting
+nav{
+  ul{
+    li{
+      color: $color_fondo;
+    }
+  }
+}
+
+//Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+#uno { @include border-radius(10px); }
+//extend
+
+#dos{
+  @extend #uno;
+  box-shadow: 10px 10px 5px 5px
+    rgba(0,0,0,0.75);
+}

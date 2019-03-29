@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* CSS reset */
+        #contenedor{
+            width: 960px;
+            outline: 1px solid black;
+            background: #eee;
+            margin: 0 auto; /*Para centrar*/
+        }
+        /* Pie y cabezera */
+        header, footer{
+            height: 100px;            
+            outline: 1px solid auto;
+            background: #eea;
+        }
+        section{
+            width: 720px;
+            outline: 1px solid black;
+            background: #FFA;
+            float: left;
+            height: 400px;
+        }
+        section > article{
+            width: 240px;
+            height: 400px;
+            float: left;
+            outline: 1px solid orange;
+        }
+        aside{
+            width: 240px;
+            height: 400px;
+            float: left;
+            outline: 1px solid red;
+            background: #00A;
+        }
+        aside > article{
+            width: 240px;
+            height: 400px;
+        }
+        footer{
+            clear: both;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>header</header>
+        <section>
+            <article>article 1</article>
+            <article>article 2</article>
+        </section>
+        <aside>article aside</aside>
+        <footer>footer</footer>   
+    </div>
+</body>
+</html>

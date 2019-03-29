@@ -1,0 +1,35 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "body";
+
+
+
+main{
+	display: flex;
+	flex-direction: column;
+	height: inherit;
+	width: 100%;
+
+}
+#arriba{
+	flex: 1;
+	
+	@include cover($url_arriba);
+}
+
+#abajo{
+	flex: 3;
+	@include cover($url_abajo);
+}
+
+
+#avatar{
+	@include cover($url_avatar);
+	
+	border-radius: 50%;
+	height: 90px;
+	width: 90px;
+	margin-left: 100px;
+	position: absolute;
+}

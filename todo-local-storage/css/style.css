@@ -1,0 +1,13 @@
+body{
+    background: #fff; 
+}
+
+#contenido{
+    border: 1px solid red;
+
+}
+
+ul{
+    list-style: none;
+}
+

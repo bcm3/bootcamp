@@ -1,0 +1,11 @@
+#cuadro{
+	width: 400px;
+	height: 200px;
+	border: 1px black solid;
+	float: right;
+}
+
+p{
+	font-size: 1em;
+	font-family: arial;
+}

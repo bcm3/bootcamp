@@ -1,0 +1,24 @@
+p.texto{
+	color: red;
+	font-weight: bold;
+	font-style: center;
+	line-height: 60px;
+}
+
+
+#multiple{
+	cursor: pointer;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	width: 200px;
+	height: 60px;
+	background: yellow;
+	transition: width 3s ease, height 2s ease 3s, opacity 4s ease 6s;
+}
+
+#multiple:hover{
+	width: 400px;
+	height: 120px;
+	opacity: -3;
+}

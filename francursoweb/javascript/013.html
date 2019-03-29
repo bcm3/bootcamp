@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>013</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	function bucle(){
+		
+		var sumatorio=0;
+		document.write("Sumatorio  entre 1 y 100");
+		for(i=1;i<=100;i++){
+			for(j=i;j>0;j--){
+				sumatorio+=j;
+			}
+			document.write(sumatorio+", ");
+			if(i%10==0){
+				document.write("<br>");
+			}
+		}
+		document.write("<h3> Hecho </h3>")
+	}
+	
+	bucle();
+	
+	</script>
+</body>
+</html>

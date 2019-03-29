@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #contenedor{
+            width: 93.75%;
+            margin: 0;
+            background: #ccc;
+            outline: 1px solid black;
+        }
+        header, footer{
+            height: 100px;
+            outline: 1px solid black;
+            background: #FFC;
+        }
+        section{
+            width: 75%; /* Respecto a la ventana */
+            outline: 1px solid black;
+            background: #FEE;
+            float: left;
+            height: 400px;
+
+        }
+        section > article{
+            width: 33.33%;
+            float: left;
+            outline: 1px solid black;
+            background: #FFA;
+            height: 400px;
+        }
+        aside{
+            width: 25%;
+            height: 400px;
+            float: left;
+            outline: 1px solid black;
+            background: red;
+        }
+        aside > article{
+            width: 100%;
+            height: 400px;
+            outline: 1px solid black;
+            background: red;
+        }
+        footer{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+       <header>
+           cabecera
+       </header>
+       <section>
+           <article>section article 1</article>
+           <article>section article 2</article>
+           <article>section article 3</article>
+       </section>
+       <aside>
+           <article>aside article</article>
+       </aside>
+       <footer>pie</footer>
+    </div>
+</body>
+</html>

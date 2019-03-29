@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Nómina</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="css-table.css" />
+</head>
+<body>
+		<form action="">
+					<table>
+					<h1>Nombre del trabajador: <span id="nombre"></span></h1>
+					<th scope="row" colspan="7" position="center">Devengos</th>
+						<tr>
+							<th scope="col">Salario Base <input type="number" id="salariobase" required/></th>
+							<th scope="col">Horas Trabajadas <input type="number" id="horas" required/></th>
+							<th scope="col">Euros la hora <input type="number" id="precio" required/></th>
+							<th scope="col">Horas extra <input type="number" id="horasextras" required/></th>
+							<th scope="col">Precio hora extra <input type="number" id="preciohorasextras" required/></th>
+							<th scope="col">Antigüedad <input type="number" id="antiguedad" required/></th><br>
+							<th scope="col"><em><span id="devengos">Total Devengos</span></em></th> 
+						</tr>
+					</th>
+					<th scope="row" colspan="4">Deducciones</th>
+						<tr>
+							<th scope="col">Contigencias Comunes <span id="comunes"></span> </th>
+							<th scope="col">Desempleo <span id="desempleo"></span></th>
+							<th scope="col">Formación Profesional <span id="fp"></span></th>
+							<th scope="col"><em><span id="deduciones">Total Deduciones</span></em></th> 
+						</tr>
+					</th>
+					<th scope="row">
+						<tr>
+							<th scope="col"><span id="nomina">Total</span><br><br></th>
+						</tr>
+					</th>
+				</table>
+			<div id="botones">
+				<input type="submit" class="btn btn-success" id="calcular" value="Calcular" onclick="calcular()"> <input type="reset" class="btn btn-warning" id="vaciar" value="Vaciar" onclick="vaciar()">
+			</div>	
+		</form>
+	</div>
+	
+	<script>
+		
+		window.onload=function(){
+			
+			var nombre=prompt("Dame el nombre del trabajador");
+			document.getElementById("nombre").innerHTML=nombre;
+			
+			var botonCalcular=document.getElementById("calcular");
+			botonCalcular.addEventListener("click",calcular,false);
+			
+			var botonBorrar=document.getElementById("vaciar");
+			botonBorrar.addEventListener("click",vaciar,false);
+				
+			var devengos=0;
+			var comunes=0;
+			var desempleo=0;
+			var fp=0;
+			var deducciones=0;
+			var nomina=0;
+			
+			function calcular(){
+				
+				//declaracion de variables
+				var salariobase=parseFloat(document.getElementById("salariobase").value);
+				var horas=parseFloat(document.getElementById("horas").value);
+				var precio=parseFloat(document.getElementById("precio").value);
+				var horasextras=parseFloat(document.getElementById("horasextras").value);
+				var preciohorasextras=parseFloat(document.getElementById("preciohorasextras").value);
+				var antiguedad=parseFloat(document.getElementById("antiguedad").value);
+			
+				//calculos
+				devengos=salariobase+horas*precio+horasextras*preciohorasextras+antiguedad;
+				
+				comunes=parseInt(devengos*0.047);
+				desempleo=parseInt(devengos*0.0155); 
+    			fp=parseInt(devengos*0.0001);
+				
+				deducciones=comunes+desempleo+fp;
+				
+				nomina=devengos-deducciones;
+				
+				//establecer resultados
+				document.getElementById("comunes").innerHTML=comunes+" €.";
+				document.getElementById("desempleo").innerHTML=desempleo+" €.";
+				document.getElementById("fp").innerHTML=fp+" €.";
+				
+				document.getElementById("devengos").innerHTML="Total Devengos: "+devengos+" €.";
+				document.getElementById("deducciones").innerHTML="Total Deducciones: "+deducciones+" €.";
+				
+				document.getElementById("nomina").innerHTML="Saldo a percibir: "+nomina+" €.";
+			}
+			
+			function vaciar(){
+				//vaciamos los campos donde se calcula los resultados
+				document.getElementById("devengos").innerHTML="";
+				document.getElementById("comunes").innerHTML="";
+				document.getElementById("desempleo").innerHTML="";
+				document.getElementById("fp").innerHTML="";
+				document.getElementById("deducciones").innerHTML="";
+			}
+			
+		}//fin funcion
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio JAVASCRIPT</title>
+</head>
+<body>
+    <input type="button" name="name" value="Suma" onclick="sumar()">
+
+    <input type="button" name="name" value="Divide" onclick="dividir()">
+
+    <script type="text/javascript">
+
+        function sumar(){
+          var numero1=parseInt(prompt("Dame numero 1"));
+          var numero2=parseInt(prompt("Dame numero 2"));
+
+          var resultado=numero1+numero2;
+
+          alert("La suma de "+numero1+"mas" +numero2+"="+resultado);
+            }
+          function dividir(){
+            var numero3=parseInt(prompt("Dame numero 1"));
+            var numero4=parseInt(prompt("Dame numero 2"));
+
+            var resultado=numero3/numero4;
+
+            alert("La division entre "+numero3+"y" +numero4+"="+resultado);
+          }
+        
+    </script>
+</body>
+</html>

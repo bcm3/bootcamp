@@ -1,0 +1,216 @@
+body { 
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    height: 100vh;
+    width: 100vw;
+
+    box-sizing: border-box;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.contenedor{
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.superior{
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inferior{
+    flex: 1;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header span{
+    display: inline-block;
+    width: 36px;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 3px;
+    margin-left: 20px;
+
+    cursor: pointer;
+    color: #fff;
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    background: #ccc;
+    border: 8px solid rgba(100, 200, 200, .8);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px rgba(100, 200, 200, .8)   ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 150px;
+    color: aqua;
+
+    text-shadow: #ccc;
+}
+
+input[type=text]{
+    outline: none;
+    background: transparent;
+    color: violet;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid rgba(100, 200, 200, .8)   ;
+    width: 350px;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+input::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, .4);
+}
+
+input[name='usuario']{
+    background-image: url('http://icons.iconarchive.com/icons/custom-icon-design/silky-line-user/256/user-icon.png');
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    background-position: 20px;
+}
+
+input[name=pass]{
+    background-image: url('http://icons.iconarchive.com/icons/iconsmind/outline/256/Security-Check-icon.png');
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    background-position: 20px 1px;
+}
+
+.ayuda{
+    color: rgba(255, 150, 111, .6);
+    font-size: 20px;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 50px;
+    cursor: pointer;
+    width: 50% ;
+    float: right;
+}
+
+.entrar{
+    color: #fff;
+    font-size: 20px;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(100, 200, 200, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.registrate{
+    color:  rgba(255, 255, 255, .6);
+    font-size: 20px;
+    height: 40px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registrate > span{
+    color: rgba(225, 255, 255, .1);
+    margin: 20px;
+    cursor: pointer;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    transition:  all .5s;
+    background:  #ECEFF1;
+    padding-left: 20px;
+    padding-top: 40px;
+    z-index: 1000;
+    
+   
+}
+
+nav.mostrar{
+    left: 0;
+    box-shadow: 5px 0px 5px 0px rgba(122,118,122,1);
+}
+
+nav span{
+    font-size:  35px;
+    margin-right: 25px;
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav li{
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 5px;
+    height: 48px;
+    line-height: 48px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+.tapar{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(100, 100, 100, .5);
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    transition: all .5s;
+}
+
+.mover-tapar{
+    left: 0;
+}

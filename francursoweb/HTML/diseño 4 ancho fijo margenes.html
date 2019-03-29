@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diseño 4 Ancho Fijo Margenes</title>
+    <style>   
+        #contenedor{
+            width: 958px;
+            margin-top: 10px; /*Arriba*/
+            margin-bottom: 0px; /*Abajo*/
+            margin-left: auto; /*Izquierda*/
+            margin-right: auto; /*Derecha*/
+            outline: 1px solid black;
+            background: #eee;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        header{
+            height: 100px;
+            margin:  0 5px 5px 5px;
+            outline: 1px solid white;
+            background: #cc0;
+            text-align: center;
+            color: brown;
+        }
+
+        
+        footer{
+            height: 100px;
+            margin: 0 5px 0 5px;
+            outline: 1px solid white;
+            background: #cc0;
+        }
+        
+        section{
+            width: 750px;
+            height: 400px;
+            float: left;
+            
+        
+        }
+        section > article{
+            float: left;
+            width: 370px;
+            height: 400px;
+            margin-left: 5px;
+            outline: 1px solid red;
+            
+        }
+        aside{
+            width: 208px;
+            height: 400px;
+            float: left;
+            margin-bottom: 5px;
+        }
+        aside > article{
+            width: 198px;
+            height: 400px;
+            margin:  0 5px 0 5px;
+            outline: 1px solid green;
+        }
+        
+        footer{
+            clear: both;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header><strong>header</strong></header>
+        <section>
+            <article>section article</article>
+            <article>section article</article>
+        </section>
+        <aside>
+            <article>aside article</article>
+        </aside>
+    <footer>footer</footer>
+    </div>
+</body>
+</html>

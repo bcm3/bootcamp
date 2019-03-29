@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+}
+
+#color {
+    height: 100vh;
+    width: 100%;
+    
+    background-image: url(../img/bg-borroso.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.capa {
+    height: 300px;
+    width: 200px;
+    
+    background-image: url(../img/bg-nitido.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    font-size: 40px;
+    color: #fff;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 8px 6px rgba(162,134,0,1);
+    
+}
+
+.capa span {
+    font-size: 20px;
+}
+
+#bn {
+    height: 100vh;
+    width: 100%;
+    
+    background-image: url(../img/bg-bn.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

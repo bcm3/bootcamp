@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    Introduce la nota <input type="text" id="nota" required />
+    <p>
+        <input type="button" id="bt" value="Guarda" onclick="createChk(nota)" />
+    </p>
+
+    <p id="container"><br></p>
+</body>
+
+<script>
+    let i = 1; // COUNTER, FOR CHECKBOX ID.
+
+    function createChk(nota) {
+
+        if (nota.value !== '') {
+
+            let chk = document.createElement('input');
+            chk.setAttribute('type', 'checkbox');
+            chk.setAttribute('id', 'prodName' + i);
+            chk.setAttribute('value', nota.value);
+            //lo que recoge
+
+            let textoIntroducido = document.createElement('label');
+            textoIntroducido.setAttribute('for', 'prodName' + i);
+
+
+            textoIntroducido.appendChild(document.createTextNode(nota.value));
+
+            container.appendChild(chk);
+            container.appendChild(textoIntroducido);
+
+            nota.value = '';
+            document.getElementById(nota.id).focus();
+
+            i = i + 1;
+        }
+    }
+</script>
+
+</html>

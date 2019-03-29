@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    p{
+      cursor: pointer;
+    }
+  </style>
+</head>
+  <body>
+
+    <p>item 1</p>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perspiciatis, quis rerum vel vitae, laborum porro, quos possimus eligendi tempore mollitia voluptatibus quam suscipit corporis saepe hic illo consequuntur. Perferendis.</div>
+
+    <p>item 2</p>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quam asperiores maiores delectus exercitationem deserunt quae, excepturi, alias expedita ratione, quod nemo. Eaque assumenda cumque, dolores optio reiciendis eveniet rerum.</div>
+
+    <p>item 3</p>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae incidunt cumque animi earum modi autem aut repellat quia alias fuga nisi laudantium sit nemo a, magni adipisci, voluptas aliquam omnis!</div>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+
+      <script>
+        $(document).ready(function(){
+          $("div").hide();
+          $("p").on("click",function(){;
+            $(this).next("div").slideDown()
+            .siblings("div").slideUp();
+          });
+
+          //odd(impar), even(par), first, last, eqt(x)=igual, lt(x)=menor que, eg(x)=mayor que, not(x)=no,
+          $("li:first").css("color", "red");
+        });
+
+    </script>
+  </body>
+</html>

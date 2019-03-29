@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nitido -borroso</title>
+    
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <section id="color">
+       <div class="capa"><a href="#bn">+</a><span>Saber más!</span></div>
+    </section>
+    <section id="bn" name="bn">
+       <div class="capa"><a href="https://www.ampproject.org/docs/get_started/about-amp.html">AMP!</a><span>Accelerated Mobile Pages Project!</span></div>
+    </section>
+    
+        
+        
+        
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>  
+     <scrip src="js/bootstrap.min.js"></scrip>
+     <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <script>
+
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+    
+</body>
+</html>

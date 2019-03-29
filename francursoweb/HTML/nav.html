@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Seat</title>
+  <style>
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+      #micontenedor{
+        background: black;
+        position: fixed;
+        width: 100%;
+        height: 50px;
+      }
+
+      #micontenedor > nav > ul{
+        list-style: none;
+        float: left;
+        margin-left: 55px;
+        line-height: 50px;
+      }
+      #micontenedor > nav > ul > li{
+        color: white;
+        display: inline;
+        outline: 1px solid red;
+      }
+
+      header{
+
+        width: 100%;
+        height: 600px;
+        margin-top: 80px;
+        margin-left: 70px;
+        float: left;
+      }
+
+      .parteizquierda{
+        padding-left: 10px;
+
+        float: left;
+      }
+      .parteizquierda > img{
+        border-radius: 20px;
+      }
+
+      .partederecha > ul > li{
+        font-family: cursive;
+          margin-left: 200px;
+      }
+
+  </style>
+</head>
+<body>
+  <div id="micontenedor">
+  <nav>
+      <ul>
+        <li>LOGO</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </div>
+    <header>
+      <h1>Porfolio Item<small>Item Subheadin</small> </h1>
+      <hr>
+      <section class="parteizquierda">
+        <img src="https://images.unsplash.com/17/unsplash_5252bb51404f8_1.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=f875778fd4151046302dc3695a48b4bd" width="500px" height="350px"alt="">
+       </section>
+      <section class="partederecha">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+               Laborum soluta minus nulla numquam sed cum facilis dicta...
+          <h3>Proyect Details</h3>
+          <ul>
+            <li>Loren Ipsum</li>
+            <li>Dolor Sit Amed</li>
+            <li>Consectetur</li>
+            <li>Adisping Eli</li>
+          </ul>
+      </section>
+    </header>
+</body>
+</html>

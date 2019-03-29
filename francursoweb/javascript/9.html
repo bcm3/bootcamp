@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>9</title>
+</head>
+<body>
+   <input type="button" name="" value="DNI" onclick="dni()">
+   
+   <script type="text/javascript">
+    
+    
+    function dni(){
+        var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+        
+        var numero = prompt("Introuce numero");
+        var letra = prompt("letra");
+        
+        letra=letra.toUpperCase();
+        
+        if (numero<0 || numero >99999999){
+            alert("numero erroneo");
+        }
+        else{
+            var letraC=letras[numero%23];
+            
+            if (letraC != letra){
+                alert("letra o numero erroneo");
+            }
+            else{
+                alert("Bien");
+            }
+        }
+    }
+    
+    
+    
+    </script>
+   
+   
+   
+   </input>
+</body>
+</html>

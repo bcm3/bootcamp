@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+	p{
+		font-family: Verdana;
+	}
+	#contenedor{
+		background: #f00;
+	}
+	.parrafo1{
+		background: #0f0;
+	}
+	.parrafo2{
+		background: #00f;
+	}
+
+	#contenedor p, #contenedor h1{
+		color: #fff;
+	}
+
+	#lista > li{
+		font-weight: bold;
+	}
+
+
+	</style>
+</head>
+<body>
+	<div id="contenedor">
+		<h1>Encabezado H1 dentro de contenedor</h1>
+		<h2>Encabezado 2</h2>
+		<p class="parrafo1">Hola me llamo Borja.</p>
+		<p class="parrafo2">Vivo en Gijón.</p>
+		<hr/>
+		<ul id="lista">
+			<li>1</li>
+			<li>2</li>
+			<ul>
+				<li>2.1</li>
+				<li>2.2</li>
+			</ul>
+			<li>3</li>
+		</ul>
+	</div>
+	<h1 title="">Con atributo title</h1>
+	<h1 title="titulo principal">Con atributo title</h1>
+	<h1 title="el otro titulo">Con atributo title</h1>
+	<h1 title="titulo $">Con atributo title</h1>
+
+	<a class="vinculo" href="#">para probar a</a>
+	<a href="#">para probar focus+active</a>
+
+</body>
+</html>

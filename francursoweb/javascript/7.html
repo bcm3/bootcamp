@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+</head>
+<body>
+    <input type="button" name="boton" value="Tabla" onclick="tabala()">
+    
+    
+    <script type="text/javascript">
+    
+        function tabala(){
+            
+            var salida="";
+            var num, mult, sum=0;
+            
+            num=prompt("Dime numero");
+            num=parseInt(num,10);
+            
+            for(var i=0; i<=10; i++){
+                mult=num*i;
+                salida=salida+mult+"\n";
+                sum=sum+mult;
+            }
+            
+            alert(salida+"\n Suma=" +sum);
+        }
+    
+    </script>
+    
+</body>
+</html>

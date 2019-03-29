@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <!-- -Hojas de estilos -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="source/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flickity.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- icono de la página -->
+    <link rel="icon" type="image/jpg" href="img/icono.jpg">
+  </head>
+  <body>
+
+    <!-- barra de navegación fijada a la cabezera -->
+     <nav class="navbar navbar-default navbar-fixed-top">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">ToDoList</a>
+         </div>
+         <div id="navbar" class="navbar-collapse collapse">
+           <ul class="nav navbar-nav">
+             <li class="active"><a href="#">Inicio</a></li>
+             <li><a href="#about">Sobre Nosotros</a></li>
+             <li><a href="#contact">Contacto</a></li>
+               <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menú <span class="caret"></span></a>
+                 <ul class="dropdown-menu">
+                   <li><a href="#">Action</a></li>
+                   <li role="separator" class="divider"></li>
+                   <li class="dropdown-header">Nav header</li>
+                   <li><a href="#">Separated link</a></li>
+                 </ul>
+               </li>
+           </ul>
+         </div>
+       </div>
+     </nav> <!-- Cerramos el nav -->
+
+    <!-- header -->
+    <header>
+      <h1>ToDoList</h1>
+      <p>La mejor app del mundo para crear tus notas </p>
+    </header>
+
+    <section class="caracteristicas">
+      <div class="container">
+        <div class="fila">
+          <!-- 4 cloumnas -->
+          <div class="col-md-3">
+            <div class="circulo"><i class="fa fa-bolt" aria-hidden="true"></i></div>
+              <h2>Rápida</h2><p>En pocos segundos</p>
+          </div>
+          <div class="col-md-3">
+            <div class="circulo"><i class="fa fa-circle-thin" aria-hidden="true"></i></div>
+            <h2>Sencilla</h2><p>Facíl de usar</p>
+          </div>
+          <div class="col-md-3">
+            <div class="circulo"><i class="fa fa-home" aria-hidden="true"></i></div>
+            <h2>Familiar</h2><p>Para el hogar</p>
+          </div>
+          <div class="col-md-3">
+            <div class="circulo"><i class="fa fa-lock" aria-hidden="true"></i></div>
+            <h2>Segura</h2><p>Datos a salvo</p>
+          </div>
+        </div>
+      </div>
+    </section> <!-- Cierre section caracteristicas -->
+
+    <!-- Seccion de los relojes -->
+    <section class="reloj">
+      <div class="container">
+        <div class="fila">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <a class="fancybox-effects-d" href="img/iwatch.jpeg" title="Apple Watch"><img src="img/iwatch.jpeg" alt="Apple Watch" /></a>
+            <h3>También disponible para el iWatch</h3><p>Controle sus notas desde los dispositivos de Apple, con una sencilla app.</p>
+          </div>
+          <div class="col-md-6">
+            <a class="fancybox-effects-d" href="img/keep.jpg" title="Android Wear"><img src="img/keep.jpg" alt="Android Wear" /></a>
+            <h3>También disponible para el Android Wear </h3><p>Controle sus notas desde los dispositivos de Android, con una sencilla app.</p>
+          </div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </section> <!-- fin section de los relojes -->
+
+    <!-- Carrousel de imagenes -->
+    <section class="galeria">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="galeria js-flickity" data-flickity-options='{ "imagesLoaded": true }'>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="" />
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section> <!-- Cierre carrrusel -->
+
+    <!-- Pie de página -->
+    <div id="footer">
+      <div class="container">
+          <div class="fila">
+              <div class="col-md-6">
+                  <h4>Datos de contacto</h4>
+                  <h5><i class="fa fa-phone" aria-hidden="true"></i> 985 123 456</h5>
+                  <h5><i class="fa fa-mobile" aria-hidden="true"></i> 656 345 983</h5>
+                  <h5><i class="fa fa-envelope" aria-hidden="true"></i> todolist@astur.com</h5>
+                  <h5><i class="fa fa-location-arrow" aria-hidden="true"></i> Avd. Del LLano, 45, 33210</h5>
+                  <h5><i class="fa fa-map-o" aria-hidden="true"></i> Gijón, Asturias, España</h5>
+                  <h5>ToDoList App. | Copyright 2016</h5>
+              </div>
+          </div>
+          <div class="fila">
+              <div class="col-md-6">
+                  <div id="tr"><h4>Nuestras Redes Sociales</h4><hr></div>
+                  <ul class="list-inline">
+                      <li><a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram fa-fw fa-3x"></i></a></li>
+                      <li><a href="#"><i class="fa fa-tumblr-square fa-fw fa-3x"></i></a></li>
+                  </ul>
+              </div>
+  		    </div>
+  	   </div>
+    </div> <!-- Cierra el pie -->
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery-2.2.3.min.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/flickity.pkgd.min.js"> </script>
+    <script src="source/jquery.fancybox.js"> </script>
+    <script type="text/javascript"> //animación para las imagenes
+        $(document).ready(function() {
+          $('.fancybox').fancybox();
+              $(".fancybox-effects-d").fancybox({
+                    padding: 0,
+                    openEffect : 'elastic',
+                    openSpeed  : 150,
+                    closeEffect : 'elastic',
+                    closeSpeed  : 150,
+                    closeClick : true,
+                    helpers : {
+        				overlay : null
+                    }
+            });
+        });
+      </script>
+
+    </body>
+  </html>

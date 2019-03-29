@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>015</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	function bucle(){
+		var k=0;
+		document.write("<h3>Numeros pares entre 1 y...");
+		
+		do{
+			k=k+50;
+			for(i=k+1-50;i<=k;i++)
+				if(i%2==0){
+					document.write(i+", ");
+				}
+				if(i%10==0){
+					document.write("<br/>");
+				}
+			}while(confirm("¿Deseas seguir?"));
+		}
+	
+	bucle();
+	
+	</script>
+</body>
+</html>

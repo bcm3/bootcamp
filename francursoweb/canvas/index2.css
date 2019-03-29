@@ -1,0 +1,31 @@
+#foto{
+	position: relative;
+	margin: 20px auto;
+	width: 500px;
+	height: 140px;
+	padding: 10px;
+	border: 1px solid red;
+	background: grey;
+}
+#foto:before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	right: 10px;
+	bottom: 17px;
+	width: 30%;
+	height: 20%;
+	box-shadow: 0 15px 10px rgba(0,0,0,.7);
+	transform: rotate(-3deg);
+}
+#foto:after{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	right: 10px;
+	bottom: 17px;
+	width: 30%;
+	height: 20%;
+	box-shadow: 0 15px 10px rgba(0,0,0,.8);
+	transform: rotate(1deg);
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Portfolio Item - Start Bootstrap Template</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/portfolio-item.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Start Bootstrap</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <!-- Portfolio Item Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Portfolio Item
+                        <small>Item Subheading</small>
+                    </h1>
+                </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- MIOOOO -->
+            <div class="row">
+
+                <div class="col-md-4">
+                    <h1>Descripcion</h1>
+                    <p id="descripcion">La Cultura.... </p>
+                    <h1>Detalles</h1>
+                    <ul id="detalles">
+                        <li>Hipster</li>
+                        <li>Ropa Vieja</li>
+                        <li>Barba poblada</li>
+                        <li>Bici de piñon fijo</li>
+                    </ul>
+                </div>
+                
+                <div id="portfolio" class="col-md-8">
+                    <div class="col-md-4">
+                        <h3>Project Description</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                        <h3>Project Details</h3>
+                        <ul>
+                            <li>Lorem Ipsum</li>
+                            <li>Dolor Sit Amet</li>
+                            <li>Consectetur</li>
+                            <li>Adipiscing Elit</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+				<!-- BOTON-->
+                <div class="stopplay">
+                    <button type="button" class="btn btn-default" onclick="myStop()">
+                        <span class="glyphicon glyphicon-pause" aria-hidden="true">Stop</span>    
+                    </button>
+                </div>
+                <hr>
+				<!-- BARRA DE PROGRESO-->
+                <div id="progress" class="progress">
+                	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="witdh: 0%">
+                		<span class="sr-only">0% Completado</span>               		
+                	</div>
+                </div>
+                
+            </div>
+            <!-- /.row -->
+
+            <!-- Related Projects Row -->
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <h3 class="page-header">Related Projects</h3>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+                    <a href="#">
+                        <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>Copyright &copy; Your Website 2014</p>
+                    </div>
+                </div>
+                <!-- /.row -->
+            </footer>
+
+        </div>
+        <!-- /.container -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+
+            var descripcion=["La cultura hipster es una subcultura de jóvenes bohemios de clase media-alta que se establecen por lo general en barrios que experimentan procesos de gentrificación. Se asocian a tendencias musicales indie y alternativas, a una moda alejada de las corrientes predominantes, basados más en lo independiente (que incluye artículos vintage), a posiciones políticas progresistas (de izquierdas), al consumo de alimentos orgánicos y productos artesanales y ropa de segunda mano. Se caracteriza por una sensibilidad variada, alejada de las corrientes culturales predominantes (mainstream) y afín a estilos de vida alternativos.1 Se ha dicho que la «hipsteria convierte elementos auténticos de todos los movimientos alternativos de la posguerra —beatnik, hippie, punk y grunge– en fetiches», se inspira en el «acervo cultural de aquellas etnias que aún no han sido asimiladas» y «lo regurgita con un guiño nada auténtico»",
+            "La cultura hipster es una subcultura de jóvenes bohemios de clase media-alta que se establecen por lo general en barrios que experimentan procesos de gentrificación. Se asocian a tendencias musicales indie y alternativas, a una moda alejada de las corrientes predominantes, basados más en lo independiente (que incluye artículos vintage), a posiciones políticas progresistas (de izquierdas), al consumo de alimentos orgánicos y productos artesanales y ropa de segunda mano. Se caracteriza por una sensibilidad variada, alejada de las corrientes culturales predominantes (mainstream) y afín a estilos de vida alternativos.1 Se ha dicho que la «hipsteria convierte elementos auténticos de todos los movimientos alternativos de la posguerra —beatnik, hippie, punk y grunge– en fetiches», se inspira en el «acervo cultural de aquellas etnias que aún no han sido asimiladas» y «lo regurgita con un guiño nada auténtico»",
+            "La cultura hipster es una subcultura de jóvenes bohemios de clase media-alta que se establecen por lo general en barrios que experimentan procesos de gentrificación. Se asocian a tendencias musicales indie y alternativas, a una moda alejada de las corrientes predominantes, basados más en lo independiente (que incluye artículos vintage), a posiciones políticas progresistas (de izquierdas), al consumo de alimentos orgánicos y productos artesanales y ropa de segunda mano. Se caracteriza por una sensibilidad variada, alejada de las corrientes culturales predominantes (mainstream) y afín a estilos de vida alternativos.1 Se ha dicho que la «hipsteria convierte elementos auténticos de todos los movimientos alternativos de la posguerra —beatnik, hippie, punk y grunge– en fetiches», se inspira en el «acervo cultural de aquellas etnias que aún no han sido asimiladas» y «lo regurgita con un guiño nada auténtico»",
+            "La cultura hipster es una subcultura de jóvenes bohemios de clase media-alta que se establecen por lo general en barrios que experimentan procesos de gentrificación. Se asocian a tendencias musicales indie y alternativas, a una moda alejada de las corrientes predominantes, basados más en lo independiente (que incluye artículos vintage), a posiciones políticas progresistas (de izquierdas), al consumo de alimentos orgánicos y productos artesanales y ropa de segunda mano. Se caracteriza por una sensibilidad variada, alejada de las corrientes culturales predominantes (mainstream) y afín a estilos de vida alternativos.1 Se ha dicho que la «hipsteria convierte elementos auténticos de todos los movimientos alternativos de la posguerra —beatnik, hippie, punk y grunge– en fetiches», se inspira en el «acervo cultural de aquellas etnias que aún no han sido asimiladas» y «lo regurgita con un guiño nada auténtico»",
+            "La cultura hipster es una subcultura de jóvenes bohemios de clase media-alta que se establecen por lo general en barrios que experimentan procesos de gentrificación. Se asocian a tendencias musicales indie y alternativas, a una moda alejada de las corrientes predominantes, basados más en lo independiente (que incluye artículos vintage), a posiciones políticas progresistas (de izquierdas), al consumo de alimentos orgánicos y productos artesanales y ropa de segunda mano. Se caracteriza por una sensibilidad variada, alejada de las corrientes culturales predominantes (mainstream) y afín a estilos de vida alternativos.1 Se ha dicho que la «hipsteria convierte elementos auténticos de todos los movimientos alternativos de la posguerra —beatnik, hippie, punk y grunge– en fetiches», se inspira en el «acervo cultural de aquellas etnias que aún no han sido asimiladas» y «lo regurgita con un guiño nada auténtico»",
+            "La cultura hipster es una subcultura de jóvenes bohemios de clase media-alta que se establecen por lo general en barrios que experimentan procesos de gentrificación. Se asocian a tendencias musicales indie y alternativas, a una moda alejada de las corrientes predominantes, basados más en lo independiente (que incluye artículos vintage), a posiciones políticas progresistas (de izquierdas), al consumo de alimentos orgánicos y productos artesanales y ropa de segunda mano. Se caracteriza por una sensibilidad variada, alejada de las corrientes culturales predominantes (mainstream) y afín a estilos de vida alternativos.1 Se ha dicho que la «hipsteria convierte elementos auténticos de todos los movimientos alternativos de la posguerra —beatnik, hippie, punk y grunge– en fetiches», se inspira en el «acervo cultural de aquellas etnias que aún no han sido asimiladas» y «lo regurgita con un guiño nada auténtico»",
+            "La cultura hipster es una subcultura de jóvenes bohemios de clase media-alta que se establecen por lo general en barrios que experimentan procesos de gentrificación. Se asocian a tendencias musicales indie y alternativas, a una moda alejada de las corrientes predominantes, basados más en lo independiente (que incluye artículos vintage), a posiciones políticas progresistas (de izquierdas), al consumo de alimentos orgánicos y productos artesanales y ropa de segunda mano. Se caracteriza por una sensibilidad variada, alejada de las corrientes culturales predominantes (mainstream) y afín a estilos de vida alternativos.1 Se ha dicho que la «hipsteria convierte elementos auténticos de todos los movimientos alternativos de la posguerra —beatnik, hippie, punk y grunge– en fetiches», se inspira en el «acervo cultural de aquellas etnias que aún no han sido asimiladas» y «lo regurgita con un guiño nada auténtico»"];
+
+            var detalles = ["<ul> <li>Lorem Ipsum</li> <li>Dolor Sit Amet</li> <li>Consectetur</li> <li>Adipiscing Elit</li> </ul>",
+                            "<ul> <li>Lorem Ipsum</li> <li>Dolor Sit Amet</li> <li>Consectetur</li> <li>Adipiscing Elit</li> </ul>",
+                            "<ul> <li>Lorem Ipsum</li> <li>Dolor Sit Amet</li> <li>Consectetur</li> <li>Adipiscing Elit</li> </ul>",
+                            "<ul> <li>Lorem Ipsum</li> <li>Dolor Sit Amet</li> <li>Consectetur</li> <li>Adipiscing Elit</li> </ul>",
+                            "<ul> <li>Lorem Ipsum</li> <li>Dolor Sit Amet</li> <li>Consectetur</li> <li>Adipiscing Elit</li> </ul>",
+                            "<ul> <li>Lorem Ipsum</li> <li>Dolor Sit Amet</li> <li>Consectetur</li> <li>Adipiscing Elit</li> </ul>",
+                            "<ul> <li>Lorem Ipsum</li> <li>Dolor Sit Amet</li> <li>Consectetur</li> <li>Adipiscing Elit</li> </ul>"];
+
+            var imagenes =["https://source.unsplash.com/WLUHO9A_xik/750x500",
+                           "https://source.unsplash.com/Lzx4J_Pb3sk/750x500",
+                           "https://source.unsplash.com/SmAiLn-nnJg/750x500",
+                           "https://source.unsplash.com/Sj5efgWguDs/750x500",
+                           "https://source.unsplash.com/category/nature/750x500",
+                           "https://source.unsplash.com/category/buildings/750x500",
+                           "https://source.unsplash.com/collection/190727/750x500"];
+
+            var myVar2 = setInterval(function(){myTimer2()}, 2000);
+			var myVar3 = setInterval(function(){progress()}, 40);
+			var tantoporciento=0;
+            var i=0;
+
+            function myTimer2(){
+                  document.getElementById("portfolio").innerHTML = "<img class='img-responsive' src='" + imagenes[i] +"'>";
+                  document.getElementById("descripcion").innerHTML = descripcion[i];  
+                  document.getElementById("detalles").innerHTML = detalles[i];
+                
+                i++;
+                
+                if(i==(imagenes.length)) {i=0};
+            }
+            
+            //botones
+            function myStop(){
+                clearInterval(myVar2);
+				clearInterval(myVar3);
+                
+                document.getElementById("stopplay").innerHTML="<div id='stopplay'><button type='button' class='btn btn-default btn-lg' onclick='myplay()'><span class='glyphicon glyphicon-play' aria-hidden='true'>Play</span></button></div>";
+            }
+            
+            function myPlay(){
+                
+                 myVar2=setInterval(function (){ myTimer2()}, 4000);
+				 myVar3=setInterval(function (){ myTimer2()}, 40);
+                
+                 document.getElementById("boton").innerHTML="<div id='stopplay'><button type='button' class='btn btn-default btn-lg' onclick='myStop()'><span class='glyphicon glyphicon-play' aria-hidden='true'>Stop</span></button></div>";
+				
+				tantoporciento=0;
+            }
+			
+			function progress(){
+				
+				document.getElementById("progress").innerHTML = "<div class='progress-bar progress-bar-info' role='progressbar' aria-valuenow='" + tantoporciento + "' aria-valuemin='0' aria-valuemax='100' style='width: " + tantoporciento + "%'>
+					<span class='sr-only'>" + tantoporciento + "% Complete</span>";
+				  tantoporciento += 1;
+				  if (tantoporciento == 100) { tantoporciento = 0; };
+
+			}
+           
+        </script>
+
+    </body>
+
+</html>

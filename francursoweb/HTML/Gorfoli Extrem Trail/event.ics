@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//timeanddate.com//Countdown
+METHOD:PUBLISH
+BEGIN:VEVENT
+DTSTART:20160406T080000Z
+TRANSP:TRANSPARENT
+SUMMARY:Carrera
+DESCRIPTION:Carrera ends on miércoles, 6 de abril de 2016, 10:00.\n\nSee 
+ more at timeanddate.com: http://www.timeanddate.com/countdown/generic?msg
+ =Carrera&p0=4005&ud=1&year=2016&month=4&day=6&hour=10&min=0&sec=0
+LOCATION:Gijón
+URL;VALUE=URI:http://www.timeanddate.com/countdown/generic?msg=Carrera&p0=
+ 4005&ud=1&year=2016&month=4&day=6&hour=10&min=0&sec=0
+UID:http://www.timeanddate.com/countdown/generic?msg=Carrera&p0=4005&ud=1&
+ year=2016&month=4&day=6&hour=10&min=0&sec=0
+DTSTAMP:20160406T080000Z
+END:VEVENT
+END:VCALENDAR

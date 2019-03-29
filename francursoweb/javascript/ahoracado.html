@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+   <html lang="es">
+   <head>
+   	<meta charset="UTF-8">
+   	<style>
+		.hidden{
+	  		display: none;
+		}
+		.right{
+		   float:right;
+		}
+		.hiddenRight{
+		   display: none;
+		   float: right;
+		   margin-right: 25%;
+		}   
+	</style>
+   	<title>Ahorcado</title>
+   </head>
+   <body>
+	  <input id="btnStart" type="button" value="Empezar juego"><!--  boton de inicio de la app-->
+      <table id="table" class="hidden">
+         <tr id="tableR">
+         </tr>
+      </table><br>
+      <table id="wordList" class="hiddenRight">
+         <tr id="wlTR">
+         </tr>
+      </table>
+      <input id="txtWord" class="hidden" type="text">
+      <input id="checkBtn" class="hidden" type="button" value="Comprobar"><br>
+      <table id="hung" class="hidden">
+         <tr id="trHung">
+         </tr>
+      </table>
+   </body>
+   <script>
+	   
+		window.onload = function(){
+	   var startButton = document.getElementById("btnStart");
+	   var table = document.getElementById("table");
+	   var tableR = document.getElementById("tableR");
+	   var tableH = document.getElementById("hung");
+	   var tableHR = document.getElementById("trHung");
+	   var wordList = document.getElementById("wordList");
+	   var wlTR = document.getElementById("wlTR");
+	   var txtWord = document.getElementById("txtWord");
+	   var checkBtn = document.getElementById("checkBtn");
+	   var word = "";
+	   var lose = "Ahorcado";
+	   var death = 0;
+	   var aciertos = 0;
+	   var repeat = "";
+	   var exist = false;
+	   startButton.addEventListener("click", addWord, false);
+	   checkBtn.addEventListener("click", checkWord, false);
+
+	   function addWord(){
+		  word = prompt("Introduce una palabra");
+		  if(word == ""){
+			 alert("Debes poner una palabra");
+			 addWord();
+		  }
+		  startButton.style.display = "none";
+		  createTables();
+		  createGameButtons();
+	   }
+	   function createTables(){
+		  for (var i = 0; i < word.length; i++) {
+			 var tableD = document.createElement("td");
+			 var cellText = document.createTextNode("_");
+			 tableD.value = word[i];
+			 tableD.appendChild(cellText);
+			 tableR.appendChild(tableD);
+		  }
+		  table.style.display="block";
+		  wordList.style.display="block";
+		  tableH.style.display="block";
+	   }
+	   function addWordToTable(){
+		  var wordTD = document.createElement("td");
+		  var txtWordTD = document.createTextNode(txtWord.value);      
+		  wordTD.appendChild(txtWordTD);
+		  wlTR.appendChild(wordTD);
+		  wordList.appendChild(wlTR);
+	   }   
+	   function createGameButtons(){
+		  txtWord.style.display="block";
+		  checkBtn.style.display="block";
+	   }
+	   function loseLifes(){
+		  var tableHD = document.createElement("td");
+		  var cellText = document.createTextNode(lose[death - 1]);
+		  tableHD.appendChild(cellText);
+		  tableHR.appendChild(tableHD);
+		  tableH.appendChild(tableHR);      
+	   }
+	   function checkRepeat(){         
+		  for(var i = 0; i <= repeat.length; i++){
+			 if(txtWord.value == repeat[i]){            
+				exist = true;               
+			 }
+		  }      
+	   }
+	   function checkWord(){
+		  exist = false;
+		  checkRepeat();
+		  if(txtWord.value == "" || txtWord.value.length > 2){
+			 alert("Letra no valida");
+		  }else if(exist){
+			 alert("Palabra repetida");
+			 txtWord.value = "";
+		  }else{
+			 addWordToTable();
+			 repeat += txtWord.value;
+			 var ok = false;
+			 for(var i = 0; i < word.length; i++){
+				if(word[i] == txtWord.value){
+				   ok = true;
+				}
+			 }
+			 if(ok){
+				for(var i = 0; i < word.length; i++){
+				   if(document.getElementsByTagName("td")[i].value == txtWord.value){
+					  document.getElementsByTagName("td")[i].innerHTML = txtWord.value;
+					  aciertos++;
+				   }
+				}
+				txtWord.value = "";
+				if(aciertos == word.length){
+				   alert("Has ganado");
+				   location.reload(true);
+				}
+				ok = false;
+			 }else{      
+				death++;      
+				if(death <= 8){
+				   loseLifes();
+				   txtWord.value = "";
+				}else{
+				   alert("Has perdido");      
+				   alert("La palabra era: " + word);      
+				   location.reload(true);
+				}
+			 }
+		  }
+	   }
+	}
+  </script>
+</html>

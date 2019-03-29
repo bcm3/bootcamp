@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+
+    <!-- Load React API -->
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <!-- Load React DOM-->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- Load Babel Compiler -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+
+<body>
+
+    <div id="id01">Hello Worlrd!</div>
+    <div id="id02">Hello World!</div>
+    <div id="root"></div>
+    <div id="tiempo"></div>
+    <div id="bien"></div>
+    <div id="wel"></div>
+    <div id="welli"></div>
+
+
+
+
+    <script type="text/babel">
+        //  JSX Babel code goes here
+        ReactDOM.render(
+        <h1>Hello React!</h1>,
+        document.getElementById('id01'));
+
+        const name = 'Borja';
+            ReactDOM.render(
+             <h1>Hello {name}!</h1>,
+          document.getElementById('id02'));
+
+          const element = <p>Hello React!</p>
+          ReactDOM.render(element, document.getElementById('root'));
+
+          function tick() {
+            const element = (<h1>{new Date().toLocaleTimeString()}</h1>);
+            ReactDOM.render(element, document.getElementById('tiempo'));
+            }
+            setInterval(tick, 1000);
+
+            //variable local -> props que va a tomar el valor de un nombre
+            function Welcome(props) {
+                //retorna el literal y lo que hay en la variable props
+                return <h1>Hola {props.name} <h6> Tienes </h6> {props.edad} !</h1>;
+                
+            }
+            ReactDOM.render(<Welcome name="Borja"  edad= '16' />, document.getElementById('wel'));
+
+          /*  class Welcome extends React.Component { 
+                render() { return(<h1>Hello {this.props.name6}</h1>); }
+            }
+            ReactDOM.render(<Welcome name6="John Doe"/>, document.getElementById('welli'));*/
+
+    </script>
+
+</body>
+
+</html>

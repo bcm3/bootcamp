@@ -1,0 +1,73 @@
+<html lang="es" ng-app="miapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular 1</title> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+    <h1>Pagina Index</h1>
+    <a href="#/">1</a>
+    <a href="#/vista2">2</a>
+
+    <ng-view></ng-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+
+    <script>
+
+     'use sctrict'
+     
+     angular.module('miapp', ['ngRoute']) 
+     
+     .config(function($routeProvider){
+         $routeProvider
+         .when('/',{
+             controler:"Controlador1",
+             templetateUrl:'inicio.html'
+         })
+         .when('/',{
+             controler:"Controlador2",
+             templetateUrl:'vista2.html'
+         });
+
+     })
+
+     .controller('Controlador1', function($scope){
+         $scope.mensaje="Hola Mundo";
+     }
+
+     .controller('Controlador2', function($scope){
+         $scope.ahora=new Date();
+     }
+
+    
+    </script>
+
+
+
+
+</body>
+
+</html>
+
+    <div class="tapar"></div>
+
+    <nav>
+        <ul>
+            <li><span class="ion-ios-close-empty"></span></li>
+            <li><span class="ion-ios-close-empty"></span></li>
+            <li><span class="ion-ios-close-empty"></span></li>
+            <li><span class="ion-ios-close-empty"></span></li>
+            <li><span class="ion-ios-close-empty"></span></li>
+            <li><span class="ion-ios-close-empty"></span></li>
+
+        </ul>
+    </nav>
+
+    <header>
+        <span class="ion-ios-drag"></span>    
+    </header>
+

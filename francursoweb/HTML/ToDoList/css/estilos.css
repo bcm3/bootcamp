@@ -1,0 +1,98 @@
+body{
+  padding-top: 50px;
+}
+
+header{
+  background-image: url("../img/phone.jpg");
+  background-position: center;
+  background-size: cover; /* Cubre todo la hoja desde cualquier navegador o dispositivo */
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 250px;
+}
+
+h1{
+  font-size: 150px;
+  color: rgba(102, 102, 102, 0.72);
+}
+
+p{
+  font-size: 35px;
+  color: rgb(166, 112, 7)
+}
+
+.caracteristicas{
+  margin-top: 50px;
+  text-align: center;
+
+}
+
+.caracteristicas .p{
+  font-size: 25px;
+
+}
+.circulo{
+  width: 100px;
+  height: 100px;
+  border-radius: 0 50%; /* color de fondo */
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 60px;
+  text-align: center; /* */
+  line-height: 100px; /* Centramos la imagen desde el top */
+}
+
+.reloj img{
+  height: 150px;
+  width: 140px;
+  border-radius: 50%;
+
+}
+
+.reloj h3{
+  font-size: 20px;
+  display: inline;
+  color: rgb(111, 28, 13);
+}
+
+.reloj p{
+  font-size: 15px;
+  color: black;
+}
+
+/* footer */
+#footer {
+	padding-bottom: 35px;
+	padding-top: 35px;
+	background: #1d1d1d;
+	color: white;
+  text-align: center;
+}
+
+#footer h6 {
+	font-size: 14px;
+	letter-spacing: 0.8px;
+}
+
+#nav{
+  background: #1d1d1d;
+}
+
+#tr hr{
+  width: 210px;
+}
+
+.galeria {
+  background: #EEE;
+}
+
+.galeria img {
+  display: block;
+  height: 200px;
+}
+@media screen and (min-width: 768px){
+  .galeria img{
+    height: 400px;
+  }
+}

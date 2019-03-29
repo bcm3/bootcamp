@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Afood</title>
+  <link rel="stylesheet" href="css/afood.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="icon" href="icono.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <nav>
+      <ul>
+        <li><span class="ion-android-cancel"></span></li>
+          <li>Inicio</li>
+          <li>Informacion</li>
+          <li>Galeria</li>
+          <li>Contacto</li>
+      </ul>
+  </nav>
+
+  <div class="contenedor">
+      <div class="capa1">
+        <header>
+          <div class="hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </div>
+          <h1>CATEGORIAS</h1>
+        </header>
+      </div>
+      <div class="capa2">
+        <span class="ion-coffee"></span>
+        <h3>TE Y CAFE</h3>
+      </div>
+      <div class="capa3">
+        <span class="ion-beer"></span>
+        <h3>CERVEZA</h3>
+      </div>
+      <div class="capa4">
+        <span class="ion-wineglass"></span>
+          <h3>VINO</h3>
+      </div>
+      <div class="capa5">
+        <span class="ion-ios-wineglass-outline"></span>
+        <h3>COPAS</h3>
+      </div>
+      <div class="capa6">
+        <footer>
+          <div class="btn">
+            <span class="ion-ios-color-filter-outline"></span>
+            <h3>Filtos</h3>
+          </div>
+          <div class="btn">
+            <span class="ion-search"></span>
+            <h3>Búsqueda</h3>
+          </div>
+          <div class="btn">
+            <span class="ion-social-usd"></span>
+            <h3>Precio</h3>
+          </div>
+          <div class="btn">
+            <span class="ion-ios-copy"></span>
+            <h3>Categorías</h3>
+          </div>
+        </footer>
+      </div>
+  </div>
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+
+    <script>
+
+    $(document).ready(function(){
+
+    $('.hamburguesa').on('click', function(){
+        $('nav').toggleClass('mostrar');
+    });
+        $('li > span').on ('click', function(){
+            $('nav').removeClass('mostrar');
+        });
+
+    });
+
+
+    </script>
+</body>
+</html>

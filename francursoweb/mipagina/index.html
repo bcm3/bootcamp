@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Borja Castaño Montes | Desarrollador Web</title>
+		<meta name="description" content="Mi Portfolio">
+		<meta name="author" content="borja castaño montes, BORJA CASTAÑO MONTES, web, WEB">
+
+		<!-- VERSION OPTIMIZADA PARA MOVIL -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="images/logo.png">
+
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+		<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+		<link href="css/index.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<!-- CABECERA -->
+		<header class="cabezera fixed clearfix navbar navbar-fixed-top">
+			<!-- contenido de la cabezera navbar -->
+			<div class="contenido">
+				<div class="row"> <!-- dos columnas para logo y el menu de navegacion -->
+						<div class="col-md-4">  <!-- COLUMNA LOGO PAGINA -->
+							<div class="header-left">
+									<img id="logo" src="images/logo.png" alt="Borja" href="#banner">
+							</div>
+						</div><!-- FIN COLUMNA LOGO PAGINA -->
+						<div class="col-md-8"> <!-- COLUMNA MENU PAGINA -->
+							<div class="header-right clearfix">
+								<div class="main-navigation animated">
+									<nav class="navbar navbar-default" role="navigation">
+										<div class="container-fluid">
+											<!-- VERSION MOVIL -->
+											<div class="navbar-header">
+												<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+													<span class="sr-only"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button>
+											</div>
+											<!-- VERSION WEB -->
+											<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+												<ul class="nav navbar-nav navbar-right">
+													<li class="active"><a href="#banner">Inicio</a></li>
+													<li><a href="#about">Sobre Mí</a></li>
+													<li><a href="#portfolio">Portfolio</a></li>
+													<li><a href="#contact">Contacto</a></li>
+												</ul>
+											</div><!--  FIN ENLANCES NAV BAR -->
+										</div> <!--  CONTENIDO -->
+									</nav> <!-- fin navbar general-->
+								</div> <!-- main-navigation end -->
+							</div> 	<!-- header-right end -->
+						 </div> <!-- fin columna izquierda -->
+				</div> <!-- fin columnas -->
+			</div> <!-- fin contenido -->
+		</header>
+
+		<!-- IMAGEN PRINCIPAL 'PORTADA'-->
+		<div id="banner" class="banner">
+			<div class="banner-image"></div>
+			<div class="banner-caption">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+							<h1>Borja Castaño Montes</h1>
+								<h2>"Desarrolador Web"</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- INICIO SECCION SOBRE MI CV-->
+		<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
+				<div class="contenido">
+				  <div class="row">
+				    <div class="col-md-12">
+				      <div class="row">
+								<div class="col-md-6">
+									<img src="images/cv_left_1.jpg" alt="">
+								</div>
+				        <div class="col-md-6">
+									<h1 id="about" class="title text-center">Sobre Mí</h1>
+				          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				            <div class="panel panel-default">
+				                <div class="panel-heading" role="tab" id="headingOne">
+				                  <h4 class="panel-title">
+				                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+				                      Formación Academica
+				                    </a>
+				                  </h4>
+				                </div>
+				                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				                  <div class="panel-body">
+														<ul>
+															<li>Grado Superior de Desarrollo de Aplicaciones Informáticas. Centro de formación
+																	profesional sectores industrial y de servicios - La Laboral en Gijón. Año: 2012.</li>
+															<li>Grado Medio de Gestión Administrativa. Centro: San Eutiquio en Gijón. Año: 2008.</li>
+														</ul>
+				                  </div>
+				                </div>
+										</div>
+										<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingTwo">
+													<h4 class="panel-title">
+														<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+															Formación Complementaria
+														</a>
+													</h4>
+												</div>
+												<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+													<div class="panel-body">
+														<ul>
+															<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate quasi voluptate aut, itaque pariatur. Tempora facere asperiores, explicabo cupiditate, facilis atque eveniet praesentium sit, quisquam corrupti, impedit! Eos, delectus nisi.</li>
+														</ul>
+													</div>
+												</div>
+										</div>
+										<div class="panel panel-default">
+					                <div class="panel-heading" role="tab" id="heading3">
+					                  <h4 class="panel-title">
+					                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+					                      Experiencia Laboral
+					                    </a>
+					                  </h4>
+					                </div>
+					                <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+					                  <div class="panel-body">
+															<ul>
+																<li>Inadeco S.L en Gijón. Año 2016.</li>
+																<li>Grupo Caip Doc-it S.L en Oviedo. Año 2015.</li>
+																<li>Ayuntamiento de Gijón. Año 2013-2014.</li>
+																<li>Grupo Intermark S.L en Gijón. Año 2012.</li>
+																<li>BICOLAN S.A en Gijón. Año 2008.</li>
+															</ul>
+					                  </div>
+					              </div>
+										</div>
+				        	</div>
+				      	</div>
+				    	</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- INICIO SECCION PORTFOLIO -->
+		<div class="section">
+		  <div class="contenido">
+		    <h1 class="text-center title" id="portfolio">Portfolio</h1>
+		    <p class="lead text-center">Estos son mis proyectos.</p>
+		    <div class="row object-non-visible" data-animation-effect="fadeIn">
+		      <div class="col-md-12">
+		        <!-- portfolio items start -->
+		        <div class="isotope-container row grid-space-20">
+		          <div class="col-sm-6 col-md-3 isotope-item web-design">
+		            <div class="image-box">
+		              <div class="overlay-container">
+		                <img src="images/todolist.jpg" alt="">
+		                <a class="overlay" data-toggle="modal" data-target="#project-1">
+		                  <i class="fa fa-search-plus"></i>
+		                </a>
+		              </div>
+		              <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">ToDoList</a>
+		            </div>
+		            <!-- AMPLIACION -->
+		            <div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+		              <div class="modal-dialog modal-lg">
+		                <div class="modal-content">
+		                  <div class="modal-header">
+		                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		                    <h4 class="modal-title" id="project-1-label">ToDoList</h4>
+											</div>
+		                  <div class="modal-body">
+		                    <h3>Descripción</h3>
+		                    <div class="row">
+		                      <div class="col-md-6">
+		                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
+														<a class="btn btn-default" target="_blank" href="../HTML/ToDoList/index.html" role="button">Pulsa aquí</a>
+		                      </div>
+		                      <div class="col-md-6">
+		                          <img src="images/todolist.jpg" alt="">
+													</div>
+		                    </div>
+		                  </div>
+		                </div>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- PIE DE PAGINA -->
+		<footer id="footer section">
+		    <div class="contenido">
+		      <h1 class="title text-center" id="contact">Contacto</h1>
+		      <div class="row">
+		        <!-- datos personales izquierda -->
+		        <div class="col-sm-6">
+		          <div class="footer-content">
+		            <p class="large">Sí te gustaría ponerte en contacto conmigo enviame un email, o rellena el siguiente formulario.</p>
+		            <ul class="list-icons">
+		              <li><i class="fa fa-map-marker pr-10"></i>Gijón, Asturias, España</li>
+		              <li><i class="fa fa-envelope-o pr-10"></i>borjacm90@gmail.com</li>
+		            </ul>
+		            <ul class="social-links">
+		              <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/profile/preview?locale=es_ES&trk=prof-0-sb-preview-primary-buttonhttps://www.linkedin.com/profile/preview?locale=es_ES&trk=prof-0-sb-preview-primary-button"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+		          </div>
+		        </div>
+		        <!-- formulario de contacto derecha type form-->
+		        <div class="col-sm-6">
+		          <div class="footer-content">
+								<!-- Change the width and height values to suit you best -->
+								<div class="typeform-widget" data-url="https://bcmontes.typeform.com/to/jvsW2o" data-text="contacto" style="width:100%;height:500px;"></div>
+									<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+		        </div>
+		      </div>
+		    </div>
+				<div class="subfooter">
+					<div class="contenido">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="text-center">Copyright © 2016 - Borja Castaño Montes</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<!-- JavaScript files placed at the end of the document so the pages load faster
+		<!-- Jquery and Bootstap core js files -->
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+		<!-- Backstretch javascript COMENTADO NO FUNCIONA-->
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+
+		<!-- Appear javascript COMENTADO NO FUNCIONA -->
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="js/template.js"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+
+	</body>
+</html>

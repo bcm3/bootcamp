@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Hamburguesa</title>
+  <link rel="stylesheet" href="css/hamburguesa.css">
+</head>
+  <body>
+    <div class="barra-superior">
+      <div class="hamburguesa">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <nav>
+      <div class="cruz">
+        <span></span>
+        <span></span>
+      </div>
+      <ul>
+          <li><a href=""></a>Item 1</li>
+          <li><a href=""></a>Item 2</li>
+          <li><a href=""></a>Item 3</li>
+          <li><a href=""></a>Item 4</li>
+          <li><a href=""></a>Item 5</li>
+      </ul>
+    </nav>
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+      <script>
+        $(document).ready(function(){
+          $(".hamburguesa").on("click",function(){
+            $("nav").toggleClass("mostrar");
+            });
+          $(".cruz").on("click",function(){
+              $("nav").removeClass("mostrar");
+              });
+          });
+      </script>
+  </body>
+
+</html>

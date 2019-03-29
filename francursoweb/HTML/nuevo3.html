@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<h1>Cómo crear imágines retina para diseño responsive</h1>
+	</header>
+	<section>
+		<p>Los nuevos dispositivos de iPhone y el iPad, vienen equipados con unas pantallas retinas. Para que nuectros diseños se vean con buena calidad en estos dispositivos va sser necesario que adaptemos las imágenes principales a esta resolucion de pantalla<br/> ¿Que es exactamente una pantalla retina? Aquella que muestra el doble de pixels en el mismo espacio que los dispositivos anteriores. <br/> en este tutorial aprenderas adaptar sus imagenes a los dispositivos ertina para cuando edsta haciendo diseño WEB responsive</p>
+	</section>
+	<hr/>
+	<h2>LAS IMAGENES RETINA</h2>
+	<p>
+		Las imagenes retina las vamos a estar utilizando tanto para el desarrollo de apps para los nuevos iPhone y iPad, como para la creacion de diseños web responsive y aplicaciones web <br/> En el caso quee estemos desarrollando apps para la Apple store no habra problema con el tema delas imagenes retina, pero si en el diseño web responsive y las aplicaciones web. <br/> Motivo Al tener las imagenes retina el doble de resolucion, tambien tendran el doblede peso, con lo que no es aconsejable hacer todas y cada una de las imagenes retina, sino las más importantes
+	</p>
+
+	<hr/>
+
+	<h2>LOS ICONOS RETINA</h2>
+	<p>
+		Es aconsable crear un icono para el iphone y el ipad por si el usuario decide guardar nuestra web o aplicacion web como un icono en su pantalla. <br/>
+		Para ello habremos de tener en cuenta estas resoluciones
+	</p>
+
+	<ul>
+	<li>iPhone: 57x57</li>
+	<li>iPhone Retina: 114x144</li>
+	<li>iPad:  72x 72</li>ç
+	<li>iPad retina: 144x144</li>
+
+	</ul>
+	<p>Si no especificamos la medida correcta, entonces utilizara la medida más grande siguiente. Así, si no especificamos el icono 114x114, utilizará el 144x144</p>
+	<p>Existen varias manera de mostrar imagenes retina,Quizas la mejor sea la que se propone en este articulo, pues o que hace con PHP desde el lado del servidor. ¿ventajas? Que si lo hacemos con JavaScriptt o jQuery descargaremos la imagen dos veces, con lo que consumineros mas ancho de banda nio optimo par acuando se esta navegando en 3G. En el caso de utilizar WodPress, te puede servir el plugin Wp Retina 2x</p>
+
+	<hr/>	
+	<h2>Mostrar las imagenes retina con css</h2>
+	<p>Con los media queries de CCS3 podemos mostrar las imagenes retina del siguiente modo:
+
+	</p>
+	<pre>
+	{
+	.retina{background: url(../images/ejemplo.png);
+	widht: 100%;
+	heiht:auto;Ç
+	}
+
+	@Mmedia only screen and (-webkit-min-device-pixel-ratio:2){
+	.retina{
+		background: url(../images/ejemplo.png);
+		}
+	}
+	</pre>
+
+	<p>Fiajte que se trata de dos imagenes diferentes y que para facilitar la lecctura del codigo añadimos al final del nombre de la imagen <strong>@2x</strong></p>
+</body>
+</html>

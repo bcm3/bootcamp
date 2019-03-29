@@ -1,0 +1,140 @@
+// ==========================================================
+
+// 320 and Up by Andy Clarke
+// Version: 3.0
+// URL: http://stuffandnonsense.co.uk/projects/320andup/
+// Apache License: v2.0. http://www.apache.org/licenses/LICENSE-2.0
+
+// ==========================================================
+
+body{
+	background: blue;
+}
+
+.menu-button{
+	display: block;
+	float: right;
+	background: red;
+	border: 1px solid #000;
+	padding: 7px 10px;
+	margin: 5px;	
+		.icon-bar {
+			display: block;
+			width: 18px;
+			height: 2px;
+			margin-top: 3px;
+			background-color: #fff;
+			@include rounded(1px);
+		}
+	}
+
+.navbar{
+	background: red;
+	overflow: hidden;
+	max-height: 40px;
+	@include transition(max-height .5s);
+	&.open{
+		max-height: 220px;
+	}
+	
+	.navbar-inner{
+		.logo{
+			display: block;
+			padding: 9px 15px;
+			font-weight: bold;
+			color: yellow;
+			margin-bottom: 4px;
+		}
+		.nav{
+			margin-bottom: 0;
+			list-style: none;
+			a{
+				@extend .logo;
+			}
+		}
+	}
+}
+
+.hero{
+	text-align: center;
+	padding: 40px 20px;
+	text-shadow: -1px 1px 0px #EOB7BA;
+	@include horizontal(#feb900, #cb790f);
+	h1{
+		margin: 10px 0;
+		font-size: 45px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 18px;
+		margin: 0 0 30px 0;
+		font-weight: 200;
+		line-height: 1.25;
+	}
+	.btn{
+		text-shadow: 1px 1px 0px #000000;
+	}
+}
+
+footer{
+	padding: 15px 0;
+	text-align: center;
+	background: #1b1b1b;
+	color: $white;
+	overflow: auto;
+	p{
+		padding: 9px 15px;
+	}
+	.social{
+		list-style: none;
+		margin: 0 auto;
+		width: 250px;
+	li{
+		float: left;
+		height: 80px;
+		width: 80px;
+		list-style: none;
+		border-radius: 50%;
+		background: #000;
+		margin-top: 20px;
+		a{
+			font-size: 42px;
+			padding-top: 24px;
+			color: $lightgrey;
+			&:visited{
+				color: $grey;
+				text-decoration: none;
+				}
+				&:hover{
+					text-decoration:none;
+					}
+		}
+	}
+	li:last-child{
+		margin-right: 0;
+	}
+}
+.toplink{
+	clear: both;
+	a{
+		display: inline-block;
+		padding: 30px;
+		color: #fff;
+		}
+	}
+}
+
+.slider{
+	text-align: center;
+	position: relative;
+	.container{
+		position: relative;
+		.slide{
+			position: relative;
+			display: none;
+			&.active{
+				display: block;
+			}
+		}
+	}
+}

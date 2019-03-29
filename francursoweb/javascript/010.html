@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10</title>
+</head>
+<body>
+    <input type="button" value="hola" onclick="hola()">
+    <div id="demo"></div>
+    <div id="demo2"></div>
+    <script type="text/javascript">
+    
+        function hola(){
+            setInterval(function () {
+                alert("hola")}, 3000);
+        }
+        
+        var myVar= setInterval(function() {tiempo()}, 1000);
+        function tiempo(){
+            var d= new Date();
+            document.getElementById("demo").innerHTML=d.toLocaleTimeString();
+        }
+        
+        var imagenes = ["1.jpg","2.jpg","3.jpg"];
+        
+        var i=0;
+        var myVar2= setInterval(function() {tiempo2()}, 1000);
+        function tiempo2(){
+             document.getElementById("demo2").innerHTML="<img src='img/"+ imagenes[i]+"'></img>;
+             i++;
+            if(i==(imagenes.length-1)){i=0};
+        }
+    
+    </script>
+</body>
+</html>

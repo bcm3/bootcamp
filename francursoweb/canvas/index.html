@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas 1</title>
+	
+			<script>
+	
+	function pintar(){
+			var elemento=document.getElementById("lienzo2");
+			lienzo2=elemento.getContext('2d');
+			
+			color=true;
+			x=0;
+			y=0;
+			
+			for(var fila=1; fila<=8; fila++){
+				for(var columna=1; columna<=8; columna++){
+					
+					if(color){
+						color=false;
+					}else{
+						color=true;
+					}
+
+					if (color){
+						lienzo2.fillRect(x,y,100,100); 
+						//ya pinta algo
+					}
+						x+=100;
+				}//fin del for
+				x=0;
+				y+=100;
+				
+				if(color){
+					color=false;
+				}else{
+					color=true;
+				}
+			}//fin fila
+			
+		}//fin de la funcion
+		
+
+		
+		//llamada a la funcion
+		window.addEventListener("load",pintar,false);
+	
+	</script>
+	
+	<script>
+	
+		
+	</script>
+	
+	
+
+	
+</head>
+<body>
+		<div style="position:adsolute; top:50px; left:50px">
+		<canvas id="lienzo2" width="800" height="800">
+			Su navegador no soporta este elemento.
+		</canvas>
+	</div>	
+
+
+
+
+
+</body>
+</html>
